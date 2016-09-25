@@ -1,0 +1,34 @@
+{
+	"name": "Safenote",
+	"manifest_version": 2,
+	"description": "Notes for Safe",
+	"version": "1.0.0",
+	"background": {
+		"page": "background.html"
+	},
+	"icons": { "16": "img/icon-16-16.png",
+           "48": "img/icon-48-48.png",
+          "128": "img/icon-128-128.png" },
+	"browser_action": {
+          "default_icon": {
+            "16": "img/icon-16-16.png",
+			"32": "img/icon-32-32.png",
+			"48": "img/icon-48-48.png",
+			"128": "img/icon-128-128.png"
+          },
+          "default_title": "Safenote",
+          "default_popup": "popup.html"
+	  },
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["jquery-2.2.3.min.js"]
+		}
+	],
+	"permissions": [
+		"tabs", "webNavigation"
+	],
+	"web_accessible_resources":[
+		"safenote.html", "img/*"
+	]
+}

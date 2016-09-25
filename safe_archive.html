@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Save notes on Safe network</title>
+        <script src="jquery-2.2.3.min.js"></script>
+        <script src="safe_archive.js"></script>
+        <script src="simple_safe.js"></script>
+        <style>
+            body {
+                background-color:#4A4A4A;
+                color:whitesmoke;
+            }
+            a {
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <div>
+                <h1 style="color:#abdeff;">Save on SAFE</h1>
+                <div id="safenote_list"></div>
+            </div>
+            <div>
+                <span id="log"></span>
+            </div>
+            <div style="width:75%;text-align:right; margin:10px;">
+                <button id="reset_auth_button" title="Reset authorization.">Reset authorization</button>
+                <button id="refresh_button" title="This list doesn't refresh automatically to local changes, press this button to refresh it.">Refresh local changes</button>
+                <button id="sync_button" title="Get all safenotes from SAFE and store them locally.">Restore from SAFE</button>
+            </div>
+        </center>
+    </body>
+</html>

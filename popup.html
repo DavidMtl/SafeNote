@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Safenote</title>
+    <style>
+      html {
+        width:780px;
+        height:580px;
+      }
+
+      body {
+        background: #3e3e3e;
+        color: #7FD0FF;
+        width:780px;
+        height:580px;
+        margin: 0px;
+      }
+
+      .title{
+          margin: 15px;
+          margin-left: 0px;
+          border-color: #a9a9a9;
+          border-style: solid;
+          border-width: 1px;
+      }
+
+      .container {
+        display: -webkit-flex;
+        display: flex;
+        flex-direction:column;
+        position:absolute;
+        height:auto;
+        bottom:0;
+        top:0;
+        left:0;
+        right:0;
+        margin-top:0px;
+        margin-bottom:20px;
+        margin-right:20px;
+        margin-left:20px;
+      }
+
+      .item {
+        border-style: solid;
+        border-color: white;
+        border-width: 0px;
+      }
+
+      .header {
+        flex-grow:0;
+      }
+
+      .editor {
+        align-self:stretch;
+        flex-grow:1;
+      }
+
+      .footer {
+        flex-grow:0;
+      }
+
+      .stretch {
+      }
+
+      .container textarea {
+        background: #323435;
+        color: #7FD0FF;
+        box-sizing: border-box; /* fit parent width */
+        resize:none;
+
+        height: 460px;
+        width: 100%;
+      }
+    </style>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+  <div class="container">
+    <div class="item header">
+      <img class="title" src="img/title_48-48.png" alt="Safenote" style="float:left;width:24px;height:24px;">
+      <div id="status" style="margin:20px;"></div>
+    </div>
+    <div class="item stretch editor"><textarea id="current_note"></textarea></div>
+    <div class="item footer">
+
+      <div style="float:right;"><button id="save_button">Save on SAFE</button></div>
+
+    </div>
+  </div>
+  </body>
+</html>

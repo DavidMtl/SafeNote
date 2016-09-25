@@ -1,0 +1,60 @@
+<div id="safe_archive_table" class="safe_archive_main">
+<style>
+    .safenote_main {
+        width:50%;
+        height:100%;
+        background-color:#4A4A4A;
+        font-family: "Courier New", Courier, monospace;
+    }
+
+    #safenote_table {
+      width:75%;
+    }
+
+    .saved_on_safe {
+        color:#abdeff;
+    }
+
+    .safenote_row_header {
+        background-color: #616161;
+    }
+
+    .safenote_row_content {
+        background-color: #757575;
+    }
+
+    #safenote_table td{
+        padding: 10px;
+        text-align: justify;
+    }
+</style>
+<center>
+  <table id="safenote_table">
+    <tbody>
+        <tr>
+          <td class="safenote_content">
+          </td>
+        </tr>
+    </tbody>
+    <tfoot>
+    </tfoot>
+  </table>
+</center>
+</div>
+<script id="hidden-template" type="text/x-custom-template">
+    <tr class="safenote_row_header">
+        <td width="90%">
+        <div class="safenote_busy" style="float:right;display:none;"><img src="img/rolling.svg" style="width:14px;height:14px;"></div>
+        <a class="safenote_url"></a>
+        </td>
+        <td style="white-space: nowrap;">
+          <div align="center">
+            <button class="delete_button">Delete</button>
+            <button class="save_button">Save</button>
+          </div>
+        </td>
+    </tr>
+    <tr class="safenote_row_content">
+      <td class="safenote_content" colspan="2"></td>
+    </tr>
+</script>
